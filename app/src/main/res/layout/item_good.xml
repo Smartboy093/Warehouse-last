@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginHorizontal="18dp"
+  android:layout_marginBottom="20dp"
+  app:cardBackgroundColor="@color/secondary"
+  app:cardCornerRadius="16dp"
+  app:cardElevation="0dp"
+  app:contentPadding="16dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/item_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/gilroy_bold"
+      android:textColor="@color/onSecondary"
+      android:textSize="16sp"
+      tools:text="Title" />
+
+    <TextView
+      android:id="@+id/item_quantity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="2dp"
+      android:fontFamily="@font/gilroy_medium"
+      android:textColor="@color/onSecondary"
+      android:textSize="14sp"
+      tools:text="14 штук" />
+
+    <TextView
+      android:id="@+id/item_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="2dp"
+      android:fontFamily="@font/gilroy_medium"
+      android:gravity="end"
+      android:textColor="@color/onSecondary"
+      android:textSize="14sp"
+      tools:text="8 мая 18:00" />
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

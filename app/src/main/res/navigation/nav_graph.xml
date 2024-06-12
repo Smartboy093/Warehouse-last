@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/welcomeFragment">
+
+  <fragment
+    android:id="@+id/addFragment"
+    android:name="com.goodswarehouse.ui.AddFragment"
+    android:label="fragment_add"
+    tools:layout="@layout/fragment_add" />
+  <fragment
+    android:id="@+id/goodsFragment"
+    android:name="com.goodswarehouse.ui.GoodsFragment"
+    android:label="fragment_goods"
+    tools:layout="@layout/fragment_goods" />
+  <fragment
+    android:id="@+id/infoFragment"
+    android:name="com.goodswarehouse.ui.InfoFragment"
+    android:label="fragment_info"
+    tools:layout="@layout/fragment_info" />
+  <fragment
+    android:id="@+id/menuFragment"
+    android:name="com.goodswarehouse.ui.MenuFragment"
+    android:label="fragment_menu"
+    tools:layout="@layout/fragment_menu" />
+  <fragment
+    android:id="@+id/signInFragment"
+    android:name="com.goodswarehouse.ui.SignInFragment"
+    android:label="fragment_sign_in"
+    tools:layout="@layout/fragment_sign_in" />
+  <fragment
+    android:id="@+id/removeFragment"
+    android:name="com.goodswarehouse.ui.RemoveFragment"
+    android:label="fragment_remove"
+    tools:layout="@layout/fragment_remove" />
+  <fragment
+    android:id="@+id/signUpFragment"
+    android:name="com.goodswarehouse.ui.SignUpFragment"
+    android:label="fragment_sign_up"
+    tools:layout="@layout/fragment_sign_up" />
+  <fragment
+    android:id="@+id/welcomeFragment"
+    android:name="com.goodswarehouse.ui.WelcomeFragment"
+    android:label="fragment_welcome"
+    tools:layout="@layout/fragment_welcome" />
+</navigation>

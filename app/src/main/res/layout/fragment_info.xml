@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.InfoFragment">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/img_bg_7" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/secondary"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:paddingHorizontal="18dp"
+      android:paddingVertical="12dp">
+
+      <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back" />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="end"
+        android:text="Информация"
+        android:textColor="@color/primary"
+        android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginHorizontal="18dp"
+      android:fontFamily="@font/gilroy_regular"
+      android:gravity="center"
+      android:text="Данное приложение называется “Учет товаров на складе”. Принимали участие в его создании студенты РТУ МИРЭА Кардашов Петр и Богатырев Хамзат. Все права защищены. Совпадения, если таковы имеются, - ими не являются или случайны."
+      android:textColor="@color/surface"
+      android:textSize="24sp" />
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

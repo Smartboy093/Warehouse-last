@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.SignUpFragment">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/img_bg_3" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Space
+      android:layout_width="1dp"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="18dp"
+      android:fontFamily="@font/gilroy_bold"
+      android:gravity="start"
+      android:text="Зарегистрируйтесь"
+      android:textColor="@color/primary"
+      android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.Material3.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/corners_16dp"
+      android:elevation="6dp"
+      android:padding="8dp"
+      android:textColorHint="@color/surfaceVariant"
+      app:boxBackgroundColor="@color/background"
+      app:boxCornerRadiusBottomEnd="16dp"
+      app:boxCornerRadiusBottomStart="16dp"
+      app:boxCornerRadiusTopEnd="16dp"
+      app:boxCornerRadiusTopStart="16dp"
+      app:boxStrokeWidth="0dp"
+      app:boxStrokeWidthFocused="0dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="start"
+        android:hint="Введите ваш e-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/surfaceVariant"
+        android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.Material3.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/corners_16dp"
+      android:elevation="6dp"
+      android:padding="8dp"
+      android:textColorHint="@color/surfaceVariant"
+      app:boxBackgroundColor="@color/background"
+      app:boxCornerRadiusBottomEnd="16dp"
+      app:boxCornerRadiusBottomStart="16dp"
+      app:boxCornerRadiusTopEnd="16dp"
+      app:boxCornerRadiusTopStart="16dp"
+      app:boxStrokeWidth="0dp"
+      app:boxStrokeWidthFocused="0dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="start"
+        android:hint="Введите имя пользователя"
+        android:inputType="text"
+        android:textColor="@color/surfaceVariant"
+        android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.Material3.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/corners_16dp"
+      android:elevation="6dp"
+      android:padding="8dp"
+      android:textColorHint="@color/surfaceVariant"
+      app:boxBackgroundColor="@color/background"
+      app:boxCornerRadiusBottomEnd="16dp"
+      app:boxCornerRadiusBottomStart="16dp"
+      app:boxCornerRadiusTopEnd="16dp"
+      app:boxCornerRadiusTopStart="16dp"
+      app:boxStrokeWidth="0dp"
+      app:boxStrokeWidthFocused="0dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="start"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textColor="@color/surfaceVariant"
+        android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.Material3.TextInputLayout.FilledBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/corners_16dp"
+      android:elevation="6dp"
+      android:padding="8dp"
+      android:textColorHint="@color/surfaceVariant"
+      app:boxBackgroundColor="@color/background"
+      app:boxCornerRadiusBottomEnd="16dp"
+      app:boxCornerRadiusBottomStart="16dp"
+      app:boxCornerRadiusTopEnd="16dp"
+      app:boxCornerRadiusTopStart="16dp"
+      app:boxStrokeWidth="0dp"
+      app:boxStrokeWidthFocused="0dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_password_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_medium"
+        android:gravity="start"
+        android:hint="Повторите пароль"
+        android:inputType="textPassword"
+        android:textColor="@color/surfaceVariant"
+        android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+      android:layout_width="1dp"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="18dp"
+      android:layout_marginBottom="24dp"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/gilroy_bold"
+        android:paddingVertical="18dp"
+        android:text="Вход"
+        android:textColor="@color/onSecondary"
+        android:textSize="16sp"
+        app:cornerRadius="16dp" />
+
+      <Space
+        android:layout_width="12dp"
+        android:layout_height="1dp" />
+
+      <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/secondary"
+        android:fontFamily="@font/gilroy_bold"
+        android:paddingVertical="18dp"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/onSecondary"
+        android:textSize="14sp"
+        app:cornerRadius="16dp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
